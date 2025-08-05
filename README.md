@@ -2,7 +2,9 @@
 
 A modern, feature-rich browser extension starter built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. This project provides a beautiful, production-ready foundation for building cross-browser extensions with a sleek popup interface.
 
-![Extension Screenshot](https://via.placeholder.com/400x600/3B82F6/FFFFFF?text=Extension+Hub+Preview)
+<p align="center">
+  <img src="./preview.png" alt="Extension Screenshot" />
+</p>
 
 ## ✨ Features
 
@@ -71,16 +73,19 @@ vite-extension-starter/
    git clone https://github.com/fabwaseem/vite-extension-starter
    cd vite-extension-starter
    ```
+
 2. **Install dependencies**
 
    ```bash
    pnpm install
    ```
+
 3. **Build the extension**
 
    ```bash
    pnpm build
    ```
+
 4. **Load the extension in your browser**
 
    **For Chrome/Edge:**
@@ -110,12 +115,14 @@ vite-extension-starter/
    ```bash
    pnpm dev
    ```
+
 2. **Make your changes** to the source files in `src/`
 3. **Build and reload** the extension in your browser to test changes
 
    ```bash
    pnpm build
    ```
+
 4. **Reload the extension** in browser's extension management page
 
 ### Customizing the Popup
@@ -174,11 +181,7 @@ Edit `src/manifest.json` to add permissions:
 
 ```json
 {
-  "permissions": [
-    "tabs",
-    "storage",
-    "activeTab"
-  ]
+  "permissions": ["tabs", "storage", "activeTab"]
 }
 ```
 
@@ -188,7 +191,7 @@ The project uses Tailwind CSS v4. Customize the theme in `src/styles.css`:
 
 ```css
 @theme {
-  --font-sans: 'Your Font', sans-serif;
+  --font-sans: "Your Font", sans-serif;
   --color-primary: #your-color;
 }
 ```
@@ -204,7 +207,7 @@ import browser from "webextension-polyfill";
 const tabs = await browser.tabs.query({ active: true });
 
 // Storage
-await browser.storage.local.set({ key: 'value' });
+await browser.storage.local.set({ key: "value" });
 ```
 
 ## 📱 Browser Extension Best Practices
